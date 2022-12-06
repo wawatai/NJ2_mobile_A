@@ -1,5 +1,6 @@
 .eventWrap {
     @include mainBG_1;
+    background: $htmlBG;
     overflow: hidden;
 
     //優惠選擇列

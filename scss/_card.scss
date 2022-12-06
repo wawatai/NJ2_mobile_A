@@ -1,11 +1,12 @@
 .cardWrap {
     @include mainBG_1;
+    background: $htmlBG;
 
     //銀行卡
     .cardBox {
         width: 100%;
         height: auto;
-        border-bottom: solid 2px $border_1;
+        border-bottom: solid 2px $mainColor_5;
 
         .title {
             color: $mainColor_2;

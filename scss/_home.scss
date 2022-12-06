@@ -2,7 +2,7 @@
 .marqueeBox {
     width: 96%;
     height: 7vw;
-    background: $marquee_BG;
+    background: $htmlBG;
     border: solid 1px $marquee_Border;
     box-shadow: 0 2px 5px 0 $mainShadow_1 inset;
     border-radius: 30px;
@@ -37,7 +37,7 @@
 
         pre {
             display: inline-block;
-            color: $marquee_Word;
+            color: $mainColor_5;
             font-size: 3vw;
             font-weight: bold;
             animation: marquee 10s linear 0s infinite;

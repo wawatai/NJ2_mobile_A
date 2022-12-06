@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     padding: 8px 8px 0;
-    background: $bg_1;
+    background: $htmlBG;
 
     ul {
         width: 100%;
@@ -27,6 +27,7 @@
 //內容
 .mailWrap {
     @include mainBG_1;
+    background: $htmlBG;
     overflow: hidden;
 
     .lineTitle {

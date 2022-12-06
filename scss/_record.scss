@@ -1,12 +1,13 @@
 //投注紀錄
 .bettingWrap {
     @include mainBG_1;
+    background: $htmlBG;
 
     .searchContent {
         width: 100%;
         height: auto;
         padding: 0 16px;
-        border-bottom: solid 2px $border_1;
+        border-bottom: solid 2px $mainColor_5;
 
         .top {
             width: 100%;
@@ -352,7 +353,7 @@
     width: 100%;
     height: auto;
     padding: 8px 8px 0;
-    background: $bg_1;
+    background: $htmlBG;
 
     ul {
         width: 100%;
