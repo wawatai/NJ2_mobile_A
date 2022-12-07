@@ -534,7 +534,7 @@
                     justify-content: center;
 
                     select {
-                        width: 300px;
+                        width: 100%;
                         height: 42px;
                         @include mainSelect;
                     }
