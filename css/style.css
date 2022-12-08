@@ -6142,6 +6142,7 @@ html body .vipDetail {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
+  background: #000000;
   padding-top: 16px;
 }
 html body .vipDetail .lineTitle {
@@ -6163,7 +6164,7 @@ html body .vipDetail .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .vipDetail .lineTitle p {
-  color: #b8151a;
+  color: #66E123;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -6173,7 +6174,7 @@ html body .vipDetail .lineTitle p {
 html body .vipDetail .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #b8151a;
+  background: #66E123;
 }
 html body .vipDetail .lvWrap {
   width: 100%;
@@ -6201,6 +6202,7 @@ html body .vipDetail .lvWrap .list .left {
 }
 html body .vipDetail .lvWrap .list .left li {
   height: 40px;
+  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6218,7 +6220,7 @@ html body .vipDetail .lvWrap .list .left li.smallTitle p {
 html body .vipDetail .lvWrap .list .left li p {
   width: 100%;
   border-right: solid 1px #a8a8a8;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 3.4vw;
   font-weight: bold;
   text-align: center;
@@ -6245,6 +6247,7 @@ html body .vipDetail .lvWrap .list .right ul li {
   width: auto;
   min-width: 30vw;
   height: 40px;
+  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6263,7 +6266,7 @@ html body .vipDetail .lvWrap .list .right ul li.smallTitle p {
 html body .vipDetail .lvWrap .list .right ul li p {
   width: 100%;
   border-right: solid 1px #a8a8a8;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 3.4vw;
   font-weight: bold;
   text-align: center;
@@ -6361,10 +6364,11 @@ html body .vipDetail .lvWrap .list .fingerBox .finger {
 html body .vipDetail .remindBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
+  border: 1px solid #ba9141;
   padding: 0 16px 16px;
 }
 html body .vipDetail .remindBox .lineTitle {
@@ -6378,7 +6382,7 @@ html body .vipDetail .remindBox .lineTitle .star_ic {
   margin: 0 5px;
 }
 html body .vipDetail .remindBox .text {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 3.4vw;
   font-weight: bold;
   line-height: 4.5vw;
