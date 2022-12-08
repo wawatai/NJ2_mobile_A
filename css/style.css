@@ -7919,7 +7919,7 @@ html body .depositWrap .remindBox {
   width: 100%;
   height: auto;
   background: #000000;
-  border: 1px solid #b8151a;
+  border: 1px solid #daaf6d;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
   border-radius: 5px;
@@ -8543,7 +8543,7 @@ html body .withWrap .withContent {
   width: 100%;
   height: auto;
   padding: 0 16px;
-  border-bottom: solid 2px #b8151a;
+  border-bottom: solid 2px #66E123;
 }
 html body .withWrap .withContent .limitBox {
   width: 100%;
@@ -8649,7 +8649,7 @@ html body .withWrap .remindBox {
   width: 100%;
   height: auto;
   background: #000000;
-  border: 1px solid #66E123;
+  border: 1px solid #daaf6d;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
   border-radius: 5px;
