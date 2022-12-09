@@ -74,10 +74,14 @@
         button {
             width: 12vw;
             height: 12vw;
-            @include lightBtn_1;
+            @include mainBtn;
             border-radius: 50%;
             font-size: 3.7vw;
             margin: 0 3px;
+
+            &:nth-of-type(2) {
+                background: $mainColor_5;
+            }
         }
     }
 
@@ -108,7 +112,7 @@
         }
 
         .userName {
-            color: $mainColor_1;
+            color: $mainColor_5;
             font-size: 4vw;
             font-weight: bold;
             margin-top: 5px;
@@ -121,7 +125,7 @@
         }
 
         .amount {
-            color: $mainColor_1;
+            color: $mainColor_5;
             font-size: 5vw;
             font-weight: bold;
             margin-top: 8px;

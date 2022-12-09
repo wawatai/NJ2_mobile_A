@@ -38,7 +38,7 @@
                 padding: 24px;
 
                 p {
-                    color: $mainColor_3;
+                    color: $mainColor_4;
                     font-size: 4vw;
                     font-weight: bold;
                     letter-spacing: 1px;
@@ -459,7 +459,7 @@
                         li {
                             width: 100%;
                             height: 46px;
-                            border-bottom: solid 1px $jumpWindow_secondBorder;
+                            border-bottom: solid 1px $border_2;
                             display: flex;
                             align-items: center;
                             position: relative;
@@ -470,7 +470,7 @@
                             }
     
                             &.smallTitle {
-                                border-color: $jumpWindow_secondBorder;
+                                border-color: $border_2;
                                 justify-content: space-between;
                                 cursor: pointer;
     
@@ -494,7 +494,7 @@
     
                             p {
                                 width: 100%;
-                                color: $mainColor_3;
+                                color: $mainColor_4;
                                 font-size: 4vw;
                                 font-weight: bold;
                                 @include hiddenText;
@@ -814,7 +814,7 @@
                 .box {
                     width: 100%;
                     height: auto;
-                    border: solid 1px $border_1;
+                    border: solid 1px $border_2;
                     border-radius: 5px;
                     overflow: hidden;
                     margin-bottom: 10px;
@@ -824,7 +824,7 @@
                         height: 9vw;
                         background: $table_jumpWindow_TitleBG;
                         border-bottom: solid 1px $table_Border;
-                        color: $mainColor_1;
+                        color: $mainColor_4;
                         font-size: 4vw;
                         font-weight: bold;
                         display: flex;
@@ -855,7 +855,7 @@
                             }
         
                             p {
-                                color: $mainColor_3;
+                                color: $mainColor_4;
         
                                 &.money {
                                     color: $remind;
