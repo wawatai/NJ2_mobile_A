@@ -1294,7 +1294,8 @@ html body .marqueeBox {
 html body .marqueeBox .title {
   width: auto;
   height: 100%;
-  background: #C9A76C;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C9A76C), to(#DD2830));
+  background: linear-gradient(to bottom, #C9A76C 0%, #DD2830 100%);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2432,7 +2433,7 @@ html body .filter .jumpWindow.betWindow .bottom {
 }
 html body .filter .jumpWindow.betWindow .top .smallTitle,
 html body .filter .jumpWindow.betWindow .bottom .smallTitle {
-  color: #ba9141;
+  color: #ffffff;
   font-size: 4vw;
   font-weight: bold;
   margin-bottom: 12px;
@@ -2456,7 +2457,7 @@ html body .filter .jumpWindow.betWindow .bottom .selectBox {
 }
 html body .filter .jumpWindow.betWindow .top .selectBox select,
 html body .filter .jumpWindow.betWindow .bottom .selectBox select {
-  width: 300px;
+  width: 100%;
   height: 42px;
   background: #000000;
   border-radius: 5px;
@@ -2543,11 +2544,10 @@ html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea {
 }
 html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button,
 html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e7e7e7), to(#ffffff));
-  background: linear-gradient(to top, #e7e7e7 0%, #ffffff 100%);
+  background: #ffc800;
   border-radius: 30px;
-  border: solid 1px #b8151a;
-  color: #b8151a;
+  border: solid 1px transparent;
+  color: #000000;
   font-size: 3.4vw;
   font-weight: bold;
   border-radius: 5px;
@@ -2556,7 +2556,7 @@ html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button {
 html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button:active, html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button.active,
 html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button:active,
 html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button.active {
-  background: #b8151a;
+  background: #DD2830;
   color: #ffffff;
 }
 html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button:last-child,
@@ -2566,7 +2566,7 @@ html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button:last-c
 html body .filter .jumpWindow.betWindow .top .amount,
 html body .filter .jumpWindow.betWindow .bottom .amount {
   width: 100%;
-  color: #b8151a;
+  color: #ffffff;
   font-size: 5vw;
   font-weight: bold;
   text-align: center;
@@ -2576,8 +2576,7 @@ html body .filter .jumpWindow.betWindow .top button,
 html body .filter .jumpWindow.betWindow .bottom button {
   width: 70%;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: #DD2830;
   border-radius: 30px;
   color: #ffffff;
   font-size: 4vw;
@@ -2592,6 +2591,9 @@ html body .filter .jumpWindow.betWindow .bottom button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
   background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
+html body .filter .jumpWindow.betWindow .bottom .smallTitle {
+  color: #DD2830;
+}
 html body .filter .jumpWindow.betWindow .enterGame {
   width: 100%;
   height: auto;
@@ -2601,17 +2603,17 @@ html body .filter .jumpWindow.betWindow .enterGame {
 html body .filter .jumpWindow.betWindow .enterGame button {
   width: 70%;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #DD2830;
   border-radius: 30px;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 4vw;
   font-weight: bold;
+  letter-spacing: 1px;
   margin-bottom: 12px;
 }
 html body .filter .jumpWindow.betWindow .enterGame button:active, html body .filter .jumpWindow.betWindow .enterGame button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
 html body .filter .jumpWindow.betWindow .enterGame div {
   width: 100%;
@@ -2665,7 +2667,7 @@ html body .filter .jumpWindow.betWindow .enterGame div input:checked::after {
   display: block;
 }
 html body .filter .jumpWindow.betWindow .enterGame div p {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
 }
@@ -4837,7 +4839,7 @@ html body .memberPlatform .box .title {
 html body .memberPlatform .box ul {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #b78d4b;
   border-top: none;
   padding: 0 8px;
@@ -5933,7 +5935,7 @@ html body .applyRecord .reviewBody .recordBox .title .review p {
 html body .applyRecord .reviewBody .recordBox ul {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #b78d4b;
   border-top: none;
   padding: 0 12px;
@@ -6139,7 +6141,7 @@ html body .vipDetail .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .vipDetail .lineTitle p {
-  color: #b8151a;
+  color: #66E123;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -6149,7 +6151,7 @@ html body .vipDetail .lineTitle p {
 html body .vipDetail .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #b8151a;
+  background: #66E123;
 }
 html body .vipDetail .lvWrap {
   width: 100%;
@@ -6159,7 +6161,7 @@ html body .vipDetail .lvWrap {
 html body .vipDetail .lvWrap .list {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border-radius: 10px;
   border: solid 1px #b78d4b;
   display: -webkit-box;
@@ -6194,7 +6196,7 @@ html body .vipDetail .lvWrap .list .left li.smallTitle p {
 html body .vipDetail .lvWrap .list .left li p {
   width: 100%;
   border-right: solid 1px #a8a8a8;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 3.4vw;
   font-weight: bold;
   text-align: center;
@@ -6239,7 +6241,7 @@ html body .vipDetail .lvWrap .list .right ul li.smallTitle p {
 html body .vipDetail .lvWrap .list .right ul li p {
   width: 100%;
   border-right: solid 1px #a8a8a8;
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 3.4vw;
   font-weight: bold;
   text-align: center;
@@ -6337,7 +6339,8 @@ html body .vipDetail .lvWrap .list .fingerBox .finger {
 html body .vipDetail .remindBox {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
+  border: 1px solid #daaf6d;
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
@@ -6354,7 +6357,7 @@ html body .vipDetail .remindBox .lineTitle .star_ic {
   margin: 0 5px;
 }
 html body .vipDetail .remindBox .text {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: 3.4vw;
   font-weight: bold;
   line-height: 4.5vw;
@@ -7384,7 +7387,7 @@ html body .bettingWrap .list .dealBox .title .date {
 html body .bettingWrap .list .dealBox ul {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #b78d4b;
   border-top: none;
   padding: 0 8px;
@@ -7623,7 +7626,7 @@ html body .waterBox .box .title .date {
 html body .waterBox .box ul {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
   border: solid 1px #b78d4b;
   border-top: none;
   padding: 0 8px;

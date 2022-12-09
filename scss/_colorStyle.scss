@@ -99,7 +99,7 @@ $ad_Dot: #ffffff;
 //marquee
 $marquee_BG: #000000;
 $marquee_Border: #daaf6d;
-$marquee_TitleBG: #C9A76C;
+$marquee_TitleBG: linear-gradient(to bottom, #C9A76C 0%, #DD2830 100%);
 $marquee_Title: #ffffff;
 $marquee_Word: $mainColor_6;
 
@@ -222,7 +222,7 @@ $footer_BG: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
 $footerHov_BG: #b8151a;
 
 //table
-$table_BG: #ffffff;
+$table_BG: #000000;
 $table_TitleBG: linear-gradient(to top,#b78c4b 0%,#d5ab6a 100%);
 $table_TitleSecondBG: linear-gradient(to top,#a2a2a2 0%,#cccccc 77%);
 $table_Title: #ffffff;
@@ -406,6 +406,33 @@ button:disabled {
     }
 }
 
+@mixin redBtn {
+    background: #DD2830;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 4vw;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    &:active,&.active {
+        background: linear-gradient(to bottom,#bc9c64 4%,#f3d197 93%);
+    }
+}
+
+
+@mixin newtransBtn {
+    background: #ffc800;
+    border-radius: 30px;
+    border: solid 1px transparent;
+    color: #000000;
+    font-size: 3.4vw;
+    font-weight: bold;
+
+    &:active,&.active {
+        background: #DD2830;
+        color: #ffffff;
+    }
+}
 
 
 //input
