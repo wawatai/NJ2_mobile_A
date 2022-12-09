@@ -8,15 +8,12 @@
 }
 $bg_1: #f0f0f0;
 $bg_2: #ffffff;
-$htmlBG: #000000;
 
 //fontColor
 $mainColor_1: #b8151a;
 $mainColor_2: #ba9141;
 $mainColor_3: #3a3a3a;
 $mainColor_4: #ffffff;
-$mainColor_5: #66E123;
-$mainColor_6: #DD2830;
 
 //border
 $border_1: #b8151a;
@@ -99,7 +96,7 @@ $ad_Dot: #ffffff;
 //marquee
 $marquee_BG: #ffffff;
 $marquee_Border: #daaf6d;
-$marquee_TitleBG: #C9A76C;
+$marquee_TitleBG: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
 $marquee_Title: #ffffff;
 $marquee_Word: #c9a567;
 
@@ -228,8 +225,8 @@ $table_TitleSecondBG: linear-gradient(to top,#a2a2a2 0%,#cccccc 77%);
 $table_Title: #ffffff;
 $table_Border: #b78d4b;
 $table_innerBorder: #a8a8a8;
-$table_jumpWindow_TitleBG: #000000;
-$table_jumpWindow_BG: #000000;
+$table_jumpWindow_TitleBG: linear-gradient(to top,#eeeeee 0%,#ffffff 100%);
+$table_jumpWindow_BG: #f1f1f1;
 
 //page
 @mixin pageStyle_1 {
@@ -294,19 +291,19 @@ $currentBG: #f0f0f0;
 $filter: #00000066;
 
 //jumpWindow
-$jumpWindow_Title: #ffffff;
-$jumpWindow_BG: #000000;
+$jumpWindow_Title: #b8151a;
+$jumpWindow_BG: #f9f9f9;
 $jumpWindow_Border: #daaf6d;
 $jumpWindow_secondBorder: #b8151a;
 @mixin newsBox {
-    background: #000000;
+    background: linear-gradient(to top,#eeeeee 0%,#ffffff 100%);
     border-radius: 5px;
     border: solid 1px #ba9141;
     overflow: hidden;
 
     &.active {
-        background: #000000;
-        // border-color: #b8151a;
+        background: #ffffff;
+        border-color: #b8151a;
         box-shadow: 0 2px 5px 0 #0000001d inset;
     }
 }
@@ -378,10 +375,10 @@ $lightBtn_secondColor: #168516;
 }
 
 @mixin quickBtn {
-    background: transparent;
+    background: linear-gradient(to top,#e7e7e7 0%,#ffffff 100%);
     border-radius: 30px;
     border: solid 1px #dfbe84;
-    color: #ffffff;
+    color: #ba9141;
     font-size: 3.4vw;
     font-weight: bold;
     display: flex;
@@ -389,7 +386,7 @@ $lightBtn_secondColor: #168516;
     padding-left: 10vw;
 
     &:active,&.active {
-        color: #DD2830;
+        color: #980707;
     }
 }
 $quickBtn_iconBG: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
@@ -407,33 +404,6 @@ button:disabled {
     }
 }
 
-@mixin redBtn {
-    background: #DD2830;
-    border-radius: 30px;
-    color: #ffffff;
-    font-size: 4vw;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-    &:active,&.active {
-        background: linear-gradient(to bottom,#bc9c64 4%,#f3d197 93%);
-    }
-}
-
-
-@mixin newtransBtn {
-    background: #ffc800;
-    border-radius: 30px;
-    border: solid 1px transparent;
-    color: #000000;
-    font-size: 3.4vw;
-    font-weight: bold;
-
-    &:active,&.active {
-        background: #DD2830;
-        color: #ffffff;
-    }
-}
 
 
 //input
@@ -442,11 +412,11 @@ button:disabled {
 
 //常用input
 @mixin mainInput {
-    background: #000000;
+    background: #ffffff;
     border-radius: 5px;
     border: solid 1px #daaf6d;
     box-shadow: 0 2px 5px 0 #0000001d inset;
-    color: #ffffff;
+    color: #3a3a3a;
     font-size: 3.4vw;
     font-weight: bold;
     padding-left: 16px;
@@ -457,7 +427,8 @@ button:disabled {
 }
 
 input:disabled {
-    background: #080808 !important;
+    border: none !important;
+    background: #ffffff !important;
     box-shadow: none !important;
 }
 
@@ -468,10 +439,10 @@ input:disabled {
 
 
 @mixin mainSelect {
-    background: #000000;
+    background: #ffffff;
     border-radius: 5px;
     border: solid 1px #daaf6d;
-    color: #ffffff;
+    color: #3a3a3a;
     font-size: 4vw;
     font-weight: bold;
     padding-left: 16px;

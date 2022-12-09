@@ -2,7 +2,7 @@
 .marqueeBox {
     width: 96%;
     height: 7vw;
-    background: $htmlBG;
+    background: $marquee_BG;
     border: solid 1px $marquee_Border;
     box-shadow: 0 2px 5px 0 $mainShadow_1 inset;
     border-radius: 30px;
@@ -37,7 +37,7 @@
 
         pre {
             display: inline-block;
-            color: $mainColor_5;
+            color: $marquee_Word;
             font-size: 3vw;
             font-weight: bold;
             animation: marquee 10s linear 0s infinite;
@@ -75,16 +75,9 @@
             width: 12vw;
             height: 12vw;
             @include lightBtn_1;
-            background: $header_langBG;
-            color: $mainColor_4;
-            border-color: transparent;
             border-radius: 50%;
             font-size: 3.7vw;
             margin: 0 3px;
-
-            &:nth-of-type(2) {
-                background: $mainColor_6;
-            }
         }
     }
 
@@ -115,7 +108,7 @@
         }
 
         .userName {
-            color: $mainColor_6;
+            color: $mainColor_1;
             font-size: 4vw;
             font-weight: bold;
             margin-top: 5px;
@@ -128,7 +121,7 @@
         }
 
         .amount {
-            color: $mainColor_6;
+            color: $mainColor_1;
             font-size: 5vw;
             font-weight: bold;
             margin-top: 8px;
@@ -157,7 +150,6 @@
             width: auto;
             height: 8vw;
             @include quickBtn;
-            color: $mainColor_4;
             position: relative;
 
             &:active,&.active {

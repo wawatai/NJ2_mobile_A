@@ -1,7 +1,6 @@
 //邀請會員
 .inviteWrap {
     @include mainBG_1;
-    background: $htmlBG;
     
     //top
     .top {
@@ -72,7 +71,7 @@
         }
 
         p {
-            color: $mainColor_5;
+            color: $mainColor_1;
             font-size: 4vw;
             font-weight: bold;
             flex-shrink: 0;
@@ -82,7 +81,7 @@
         .line {
             width: 100%;
             height: 2px;
-            background: $mainColor_5;
+            background: $border_1;
         }
     }
 
@@ -108,7 +107,7 @@
         }
 
         .text {
-            color: $mainColor_4;
+            color: $mainColor_3;
             font-size: 3.4vw;
             font-weight: bold;
             margin-bottom: 5px;

@@ -1,13 +1,12 @@
 //會員中心
 .memberWrap {
     @include mainBG_1;
-    background: $htmlBG;
 
     //玩家資訊
     .user {
         width: 100%;
         height: auto;
-        border-bottom: solid 2px $mainColor_5;
+        border-bottom: solid 2px $border_1;
         padding-top: 8px;
 
         //上列
@@ -125,7 +124,7 @@
                     }
 
                     p {
-                        color: $mainColor_4;
+                        color: $mainColor_3;
                         font-size: 3vw;
                         font-weight: bold;
                         margin-top: 5px;
@@ -193,7 +192,7 @@
 .memberList {
     width: 100%;
     height: auto;
-    background: $htmlBG;
+    background: $bg_1;
     padding: 8px 8px 0;
 
     ul {
@@ -219,13 +218,12 @@
 //會員中心內頁基本情報
 .memberInfo {
     @include mainBG_1;
-    background: $htmlBG;
 
     //上輸入列
     form {
         width: 100%;
         height: auto;
-        border-bottom: solid 2px $mainColor_5;
+        border-bottom: solid 2px $border_1;
 
         ul {
             width: 100%;
@@ -300,7 +298,7 @@
     .info_1 {
         width: 100%;
         height: auto;
-        border-bottom: solid 2px $mainColor_5;
+        border-bottom: solid 2px $border_1;
 
         ul {
             width: 100%;
@@ -352,7 +350,7 @@
         width: 100%;
         height: auto;
         padding: 16px 16px 0;
-        border-bottom: solid 2px $mainColor_5;
+        border-bottom: solid 2px $border_1;
 
         ul {
             width: 100%;
@@ -445,7 +443,6 @@
 //會員中心平台帳戶資訊
 .memberPlatform {
     @include mainBG_1;
-    background: $htmlBG;
     padding: 8px 24px 20vw;
 
     .box {

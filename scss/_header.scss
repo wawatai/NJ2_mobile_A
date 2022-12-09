@@ -58,14 +58,10 @@ header {
                 
                 &:first-child {
                     @include loginBtn;
-                    background: $mainColor_6;
-                    color: $mainColor_4;
-                    border-color: transparent;
                 }
 
                 &:last-child {
                     @include signupBtn;
-                    background: $mainColor_5;
                 }
             }
         }

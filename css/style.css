@@ -13,9 +13,15 @@ button:disabled i {
 }
 
 input:disabled {
-  background: #080808 !important;
+  border: none !important;
+  background: #ffffff !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+.bg {
+  background: url("../images/bg.jpg") top center;
+  background-size: cover;
 }
 
 header .back_arrow .arrow_ic {
@@ -899,7 +905,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 html {
   width: 100%;
   height: 100%;
-  background: #000000;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 html body {
@@ -1011,9 +1016,6 @@ html body header .content .loginBox button:first-child {
   color: #c9a567;
   font-size: 3.4vw;
   font-weight: bold;
-  background: #DD2830;
-  color: #ffffff;
-  border-color: transparent;
 }
 html body header .content .loginBox button:first-child:active, html body header .content .loginBox button:first-child.active {
   background: #b8151a;
@@ -1027,7 +1029,6 @@ html body header .content .loginBox button:last-child {
   color: #ffffff;
   font-size: 3.4vw;
   font-weight: bold;
-  background: #66E123;
 }
 html body header .content .loginBox button:last-child:active, html body header .content .loginBox button:last-child.active {
   background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
@@ -1280,7 +1281,7 @@ html body .multiple-items.card .slick-arrow.slick-next::before {
 html body .marqueeBox {
   width: 96%;
   height: 7vw;
-  background: #000000;
+  background: #ffffff;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2) inset;
@@ -1299,7 +1300,8 @@ html body .marqueeBox {
 html body .marqueeBox .title {
   width: auto;
   height: 100%;
-  background: #C9A76C;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1326,7 +1328,7 @@ html body .marqueeBox .marquee {
 }
 html body .marqueeBox .marquee pre {
   display: inline-block;
-  color: #66E123;
+  color: #c9a567;
   font-size: 3vw;
   font-weight: bold;
   -webkit-animation: marquee 10s linear 0s infinite;
@@ -1385,9 +1387,6 @@ html body .quickBox .btnBox button {
   color: #b8151a;
   font-size: 3.4vw;
   font-weight: bold;
-  background: #c8a870;
-  color: #ffffff;
-  border-color: transparent;
   border-radius: 50%;
   font-size: 3.7vw;
   margin: 0 3px;
@@ -1395,9 +1394,6 @@ html body .quickBox .btnBox button {
 html body .quickBox .btnBox button:active, html body .quickBox .btnBox button.active {
   background: #b8151a;
   color: #ffffff;
-}
-html body .quickBox .btnBox button:nth-of-type(2) {
-  background: #DD2830;
 }
 html body .quickBox .nameBox,
 html body .quickBox .walletBox {
@@ -1442,7 +1438,7 @@ html body .quickBox .walletBox .lv p {
 }
 html body .quickBox .nameBox .userName,
 html body .quickBox .walletBox .userName {
-  color: #DD2830;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   margin-top: 5px;
@@ -1455,7 +1451,7 @@ html body .quickBox .walletBox .smallTitle {
 }
 html body .quickBox .nameBox .amount,
 html body .quickBox .walletBox .amount {
-  color: #DD2830;
+  color: #b8151a;
   font-size: 5vw;
   font-weight: bold;
   margin-top: 8px;
@@ -1479,10 +1475,11 @@ html body .homeCenter .topBox {
 html body .homeCenter .topBox li {
   width: auto;
   height: 8vw;
-  background: transparent;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e7e7e7), to(#ffffff));
+  background: linear-gradient(to top, #e7e7e7 0%, #ffffff 100%);
   border-radius: 30px;
   border: solid 1px #dfbe84;
-  color: #ffffff;
+  color: #ba9141;
   font-size: 3.4vw;
   font-weight: bold;
   display: -webkit-box;
@@ -1492,11 +1489,10 @@ html body .homeCenter .topBox li {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 10vw;
-  color: #ffffff;
   position: relative;
 }
 html body .homeCenter .topBox li:active, html body .homeCenter .topBox li.active {
-  color: #DD2830;
+  color: #980707;
 }
 html body .homeCenter .topBox li:active i, html body .homeCenter .topBox li.active i {
   background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
@@ -1795,7 +1791,7 @@ html body .filter.display {
 html body .filter .jumpWindow {
   width: 90vw;
   height: auto;
-  background: #000000;
+  background: #f9f9f9;
   border: solid 1px #daaf6d;
   border-radius: 16px;
   position: relative;
@@ -1811,7 +1807,7 @@ html body .filter .jumpWindow.plsGo .content, html body .filter .jumpWindow.plsG
   padding: 24px;
 }
 html body .filter .jumpWindow.plsGo .content p, html body .filter .jumpWindow.plsGo2 .content p {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
   letter-spacing: 1px;
@@ -1829,7 +1825,6 @@ html body .filter .jumpWindow.plsGo .content button, html body .filter .jumpWind
   font-size: 4vw;
   font-weight: bold;
   letter-spacing: 1px;
-  background: #DD2830;
   margin-top: 24px;
 }
 html body .filter .jumpWindow.plsGo .content button:active, html body .filter .jumpWindow.plsGo .content button.active, html body .filter .jumpWindow.plsGo2 .content button:active, html body .filter .jumpWindow.plsGo2 .content button.active {
@@ -1902,12 +1897,12 @@ html body .filter .jumpWindow.loginWindow form label:nth-of-type(2) {
 html body .filter .jumpWindow.loginWindow form label input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -1993,12 +1988,12 @@ html body .filter .jumpWindow.forgetWindow form {
 html body .filter .jumpWindow.forgetWindow form input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -2108,12 +2103,12 @@ html body .filter .jumpWindow.registerWindow form label div em {
 html body .filter .jumpWindow.registerWindow form label div input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -2357,7 +2352,8 @@ html body .filter .jumpWindow.news .box, html body .filter .jumpWindow.rules .bo
 html body .filter .jumpWindow.news .box .infoBox, html body .filter .jumpWindow.rules .box .infoBox, html body .filter .jumpWindow.agentRules .box .infoBox {
   width: 96%;
   height: 46px;
-  background: #000000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#eeeeee), to(#ffffff));
+  background: linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
   border-radius: 5px;
   border: solid 1px #ba9141;
   overflow: hidden;
@@ -2365,7 +2361,8 @@ html body .filter .jumpWindow.news .box .infoBox, html body .filter .jumpWindow.
   padding: 0 12px;
 }
 html body .filter .jumpWindow.news .box .infoBox.active, html body .filter .jumpWindow.rules .box .infoBox.active, html body .filter .jumpWindow.agentRules .box .infoBox.active {
-  background: #000000;
+  background: #ffffff;
+  border-color: #b8151a;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
 }
@@ -2389,7 +2386,7 @@ html body .filter .jumpWindow.news .box .infoBox ul, html body .filter .jumpWind
 html body .filter .jumpWindow.news .box .infoBox ul li, html body .filter .jumpWindow.rules .box .infoBox ul li, html body .filter .jumpWindow.agentRules .box .infoBox ul li {
   width: 100%;
   height: 46px;
-  border-bottom: solid 1px #daaf6d;
+  border-bottom: solid 1px #b8151a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2403,7 +2400,7 @@ html body .filter .jumpWindow.news .box .infoBox ul li:last-child, html body .fi
   border: none;
 }
 html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle, html body .filter .jumpWindow.rules .box .infoBox ul li.smallTitle, html body .filter .jumpWindow.agentRules .box .infoBox ul li.smallTitle {
-  border-color: #daaf6d;
+  border-color: #b8151a;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2426,7 +2423,7 @@ html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle .arrow_ic, htm
 }
 html body .filter .jumpWindow.news .box .infoBox ul li p, html body .filter .jumpWindow.rules .box .infoBox ul li p, html body .filter .jumpWindow.agentRules .box .infoBox ul li p {
   width: 100%;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
   overflow: hidden;
@@ -2437,12 +2434,12 @@ html body .filter .jumpWindow.betWindow .top,
 html body .filter .jumpWindow.betWindow .bottom {
   width: 100%;
   height: auto;
-  border-bottom: solid 1px #daaf6d;
+  border-bottom: solid 1px #b8151a;
   padding: 12px 0;
 }
 html body .filter .jumpWindow.betWindow .top .smallTitle,
 html body .filter .jumpWindow.betWindow .bottom .smallTitle {
-  color: #ffffff;
+  color: #ba9141;
   font-size: 4vw;
   font-weight: bold;
   margin-bottom: 12px;
@@ -2466,12 +2463,12 @@ html body .filter .jumpWindow.betWindow .bottom .selectBox {
 }
 html body .filter .jumpWindow.betWindow .top .selectBox select,
 html body .filter .jumpWindow.betWindow .bottom .selectBox select {
-  width: 100%;
+  width: 300px;
   height: 42px;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -2515,12 +2512,12 @@ html body .filter .jumpWindow.betWindow .top .inputBox input,
 html body .filter .jumpWindow.betWindow .bottom .inputBox input {
   width: 100%;
   height: 42px;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -2553,10 +2550,11 @@ html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea {
 }
 html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button,
 html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button {
-  background: #ffc800;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e7e7e7), to(#ffffff));
+  background: linear-gradient(to top, #e7e7e7 0%, #ffffff 100%);
   border-radius: 30px;
-  border: solid 1px transparent;
-  color: #000000;
+  border: solid 1px #b8151a;
+  color: #b8151a;
   font-size: 3.4vw;
   font-weight: bold;
   border-radius: 5px;
@@ -2565,7 +2563,7 @@ html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button {
 html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button:active, html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button.active,
 html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button:active,
 html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button.active {
-  background: #DD2830;
+  background: #b8151a;
   color: #ffffff;
 }
 html body .filter .jumpWindow.betWindow .top .inputBox .BtnArea button:last-child,
@@ -2575,7 +2573,7 @@ html body .filter .jumpWindow.betWindow .bottom .inputBox .BtnArea button:last-c
 html body .filter .jumpWindow.betWindow .top .amount,
 html body .filter .jumpWindow.betWindow .bottom .amount {
   width: 100%;
-  color: #ffffff;
+  color: #b8151a;
   font-size: 5vw;
   font-weight: bold;
   text-align: center;
@@ -2585,7 +2583,8 @@ html body .filter .jumpWindow.betWindow .top button,
 html body .filter .jumpWindow.betWindow .bottom button {
   width: 70%;
   height: 42px;
-  background: #DD2830;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
   border-radius: 30px;
   color: #ffffff;
   font-size: 4vw;
@@ -2600,9 +2599,6 @@ html body .filter .jumpWindow.betWindow .bottom button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
   background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
-html body .filter .jumpWindow.betWindow .bottom .smallTitle {
-  color: #DD2830;
-}
 html body .filter .jumpWindow.betWindow .enterGame {
   width: 100%;
   height: auto;
@@ -2612,17 +2608,17 @@ html body .filter .jumpWindow.betWindow .enterGame {
 html body .filter .jumpWindow.betWindow .enterGame button {
   width: 70%;
   height: 42px;
-  background: #DD2830;
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
   border-radius: 30px;
   color: #ffffff;
-  font-size: 4vw;
+  font-size: 3.4vw;
   font-weight: bold;
-  letter-spacing: 1px;
   margin-bottom: 12px;
 }
 html body .filter .jumpWindow.betWindow .enterGame button:active, html body .filter .jumpWindow.betWindow .enterGame button.active {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
 }
 html body .filter .jumpWindow.betWindow .enterGame div {
   width: 100%;
@@ -2676,7 +2672,7 @@ html body .filter .jumpWindow.betWindow .enterGame div input:checked::after {
   display: block;
 }
 html body .filter .jumpWindow.betWindow .enterGame div p {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 16px;
   font-weight: bold;
 }
@@ -2712,12 +2708,12 @@ html body .filter .jumpWindow.phoneWindow form label:nth-of-type(2) {
 html body .filter .jumpWindow.phoneWindow form label input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -2793,12 +2789,12 @@ html body .filter .jumpWindow.passwordWindow .content .inputBox {
 html body .filter .jumpWindow.passwordWindow .content .inputBox input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -2908,7 +2904,7 @@ html body .filter .jumpWindow.waterWindow_1 .content, html body .filter .jumpWin
 html body .filter .jumpWindow.waterWindow_1 .content .box, html body .filter .jumpWindow.waterWindow_2 .content .box, html body .filter .jumpWindow.betRecord .content .box, html body .filter .jumpWindow.pointWindow .content .box, html body .filter .jumpWindow.partnerBox .content .box {
   width: 100%;
   height: auto;
-  border: solid 1px #b78d4b;
+  border: solid 1px #b8151a;
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 10px;
@@ -2916,7 +2912,8 @@ html body .filter .jumpWindow.waterWindow_1 .content .box, html body .filter .ju
 html body .filter .jumpWindow.waterWindow_1 .content .box .smallTitle, html body .filter .jumpWindow.waterWindow_2 .content .box .smallTitle, html body .filter .jumpWindow.betRecord .content .box .smallTitle, html body .filter .jumpWindow.pointWindow .content .box .smallTitle, html body .filter .jumpWindow.partnerBox .content .box .smallTitle {
   width: 100%;
   height: 9vw;
-  background: #000000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#eeeeee), to(#ffffff));
+  background: linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
   border-bottom: solid 1px #b78d4b;
   color: #b8151a;
   font-size: 4vw;
@@ -2932,7 +2929,7 @@ html body .filter .jumpWindow.waterWindow_1 .content .box .smallTitle, html body
 html body .filter .jumpWindow.waterWindow_1 .content .box ul, html body .filter .jumpWindow.waterWindow_2 .content .box ul, html body .filter .jumpWindow.betRecord .content .box ul, html body .filter .jumpWindow.pointWindow .content .box ul, html body .filter .jumpWindow.partnerBox .content .box ul {
   width: 100%;
   height: auto;
-  background: #000000;
+  background: #f1f1f1;
   border-top: none;
   padding: 0 8px;
 }
@@ -2957,7 +2954,7 @@ html body .filter .jumpWindow.waterWindow_1 .content .box ul li:last-child, html
   border: none;
 }
 html body .filter .jumpWindow.waterWindow_1 .content .box ul li p, html body .filter .jumpWindow.waterWindow_2 .content .box ul li p, html body .filter .jumpWindow.betRecord .content .box ul li p, html body .filter .jumpWindow.pointWindow .content .box ul li p, html body .filter .jumpWindow.partnerBox .content .box ul li p {
-  color: #ffffff;
+  color: #3a3a3a;
 }
 html body .filter .jumpWindow.waterWindow_1 .content .box ul li p.money, html body .filter .jumpWindow.waterWindow_2 .content .box ul li p.money, html body .filter .jumpWindow.betRecord .content .box ul li p.money, html body .filter .jumpWindow.pointWindow .content .box ul li p.money, html body .filter .jumpWindow.partnerBox .content .box ul li p.money {
   color: #173fde;
@@ -2976,7 +2973,8 @@ html body .filter .jumpWindow.waterWindow_1 .content table tr:last-child td p, h
 html body .filter .jumpWindow.waterWindow_1 .content table tr th, html body .filter .jumpWindow.waterWindow_2 .content table tr th, html body .filter .jumpWindow.betRecord .content table tr th, html body .filter .jumpWindow.pointWindow .content table tr th, html body .filter .jumpWindow.partnerBox .content table tr th {
   height: 9vw;
   vertical-align: middle;
-  background: #000000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#eeeeee), to(#ffffff));
+  background: linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
   border-bottom: solid 1px #b78d4b;
 }
 html body .filter .jumpWindow.waterWindow_1 .content table tr th p, html body .filter .jumpWindow.waterWindow_2 .content table tr th p, html body .filter .jumpWindow.betRecord .content table tr th p, html body .filter .jumpWindow.pointWindow .content table tr th p, html body .filter .jumpWindow.partnerBox .content table tr th p {
@@ -3097,7 +3095,7 @@ html body .filter .jumpWindow.eventWindow .content img {
   margin: 10px 0;
 }
 html body .filter .jumpWindow.eventWindow .content p {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.7vw;
   font-weight: bold;
   line-height: 4.5vw;
@@ -3233,12 +3231,12 @@ html body .filter .jumpWindow.agentWindow form label div em {
 html body .filter .jumpWindow.agentWindow form label div input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -3463,7 +3461,7 @@ html body .filter .jumpWindow.agentWindow form .checkBtn:active, html body .filt
 html body .filter .jumpWindow .title {
   width: 100%;
   height: 50px;
-  border-bottom: solid 3px #daaf6d;
+  border-bottom: solid 3px #b8151a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3483,13 +3481,13 @@ html body .filter .jumpWindow .title.sp {
   padding: 16px 0;
 }
 html body .filter .jumpWindow .title.sp .smallTitle {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   letter-spacing: 0;
   margin-top: 8px;
 }
 html body .filter .jumpWindow .title p {
-  color: #ffffff;
+  color: #b8151a;
   font-size: 5vw;
   font-weight: bold;
   letter-spacing: 2px;
@@ -3497,7 +3495,7 @@ html body .filter .jumpWindow .title p {
 html body .filter .jumpWindow .title i {
   width: 9vw;
   height: 9vw;
-  background: #000000;
+  background: #f9f9f9;
   border-radius: 50%;
   position: absolute;
   top: -12vw;
@@ -3590,12 +3588,12 @@ html body .slotWrap .slotHeader .searchBox .search_ic {
 html body .slotWrap .slotHeader .searchBox input {
   width: 100%;
   height: 8vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -3764,7 +3762,6 @@ html body .eventWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
   overflow: hidden;
 }
 html body .eventWrap .eventType {
@@ -3897,7 +3894,6 @@ html body .eventDetail {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
   padding: 8px 8px 20vw;
 }
 html body .eventDetail .content {
@@ -3927,7 +3923,7 @@ html body .eventDetail .content .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .eventDetail .content .lineTitle p {
-  color: #66E123;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -3937,7 +3933,7 @@ html body .eventDetail .content .lineTitle p {
 html body .eventDetail .content .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #66E123;
+  background: #b8151a;
 }
 html body .eventDetail .content .textBox {
   width: 100%;
@@ -3945,7 +3941,7 @@ html body .eventDetail .content .textBox {
   padding: 0 16px;
 }
 html body .eventDetail .content .textBox p {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
   line-height: 5.5vw;
@@ -3960,7 +3956,6 @@ html body .walletWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
 }
 html body .walletWrap .walletBox {
   width: 100%;
@@ -4110,7 +4105,7 @@ html body .walletWrap .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .walletWrap .lineTitle p {
-  color: #66E123;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -4120,12 +4115,12 @@ html body .walletWrap .lineTitle p {
 html body .walletWrap .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #66E123;
+  background: #b8151a;
 }
 html body .walletWrap .walletList {
   width: 100%;
   height: auto;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
   margin-bottom: 24px;
 }
 html body .walletWrap .walletList button {
@@ -4242,10 +4237,11 @@ html body .walletWrap .optionBox {
 html body .walletWrap .optionBox button {
   width: 100%;
   height: 12vw;
-  background: transparent;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e7e7e7), to(#ffffff));
+  background: linear-gradient(to top, #e7e7e7 0%, #ffffff 100%);
   border-radius: 30px;
   border: solid 1px #dfbe84;
-  color: #ffffff;
+  color: #ba9141;
   font-size: 3.4vw;
   font-weight: bold;
   display: -webkit-box;
@@ -4261,7 +4257,7 @@ html body .walletWrap .optionBox button {
   margin-bottom: 10px;
 }
 html body .walletWrap .optionBox button:active, html body .walletWrap .optionBox button.active {
-  color: #DD2830;
+  color: #980707;
 }
 html body .walletWrap .optionBox button:last-child {
   margin: 0;
@@ -4296,12 +4292,11 @@ html body .memberWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
 }
 html body .memberWrap .user {
   width: 100%;
   height: auto;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
   padding-top: 8px;
 }
 html body .memberWrap .user .info {
@@ -4450,7 +4445,7 @@ html body .memberWrap .user .btnBox .right li button::before {
           transform: translate(-50%, -50%);
 }
 html body .memberWrap .user .btnBox .right li p {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3vw;
   font-weight: bold;
   margin-top: 5px;
@@ -4467,10 +4462,11 @@ html body .memberWrap .optionBox ul {
 html body .memberWrap .optionBox ul li {
   width: 100%;
   height: 12vw;
-  background: transparent;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e7e7e7), to(#ffffff));
+  background: linear-gradient(to top, #e7e7e7 0%, #ffffff 100%);
   border-radius: 30px;
   border: solid 1px #dfbe84;
-  color: #ffffff;
+  color: #ba9141;
   font-size: 3.4vw;
   font-weight: bold;
   display: -webkit-box;
@@ -4486,7 +4482,7 @@ html body .memberWrap .optionBox ul li {
   margin-bottom: 10px;
 }
 html body .memberWrap .optionBox ul li:active, html body .memberWrap .optionBox ul li.active {
-  color: #DD2830;
+  color: #980707;
 }
 html body .memberWrap .optionBox ul li:last-child {
   margin: 0;
@@ -4518,7 +4514,7 @@ html body .memberWrap .optionBox ul li i::before {
 html body .memberList {
   width: 100%;
   height: auto;
-  background: #000000;
+  background: #f0f0f0;
   padding: 8px 8px 0;
 }
 html body .memberList ul {
@@ -4563,12 +4559,11 @@ html body .memberInfo {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
 }
 html body .memberInfo form {
   width: 100%;
   height: auto;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
 }
 html body .memberInfo form ul {
   width: 100%;
@@ -4599,12 +4594,12 @@ html body .memberInfo form ul li .inputBox {
 html body .memberInfo form ul li .inputBox input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -4662,7 +4657,7 @@ html body .memberInfo form ul button:active, html body .memberInfo form ul butto
 html body .memberInfo .info_1 {
   width: 100%;
   height: auto;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
 }
 html body .memberInfo .info_1 ul {
   width: 100%;
@@ -4687,12 +4682,12 @@ html body .memberInfo .info_1 ul li .inputBox {
 html body .memberInfo .info_1 ul li .inputBox input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -4730,7 +4725,7 @@ html body .memberInfo .info_2 {
   width: 100%;
   height: auto;
   padding: 16px 16px 0;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
 }
 html body .memberInfo .info_2 ul {
   width: 100%;
@@ -4823,7 +4818,6 @@ html body .memberPlatform {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
   padding: 8px 24px 20vw;
 }
 html body .memberPlatform .box {
@@ -4900,7 +4894,6 @@ html body .helpWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
   padding: 0 0 20vw;
   display: none;
 }
@@ -5016,7 +5009,6 @@ html body .helpInner {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
   display: none;
 }
 html body .helpInner.display {
@@ -5050,7 +5042,7 @@ html body .helpInner li .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .helpInner li .lineTitle p {
-  color: #66E123;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -5060,10 +5052,10 @@ html body .helpInner li .lineTitle p {
 html body .helpInner li .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #66E123;
+  background: #b8151a;
 }
 html body .helpInner li .text {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.7vw;
   font-weight: bold;
   line-height: 4.5vw;
@@ -5106,7 +5098,7 @@ html body .helpInner li .img.depositWay {
 html body .helpInner li .uploadBox {
   width: 100%;
   height: auto;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
   padding-bottom: 24px;
 }
 html body .helpInner li .uploadBox:last-child {
@@ -5334,7 +5326,6 @@ html body .helpContact {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
   padding: 16px 16px 0;
 }
 html body .helpContact .lineTitle {
@@ -5365,7 +5356,7 @@ html body .helpContact .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .helpContact .lineTitle p {
-  color: #66E123;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -5375,7 +5366,7 @@ html body .helpContact .lineTitle p {
 html body .helpContact .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #66E123;
+  background: #b8151a;
 }
 html body .helpContact .outerLine {
   width: 100%;
@@ -5390,7 +5381,7 @@ html body .helpContact .contentBox {
   margin-bottom: 24px;
 }
 html body .helpContact .contentBox .text {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.7vw;
   font-weight: bold;
   line-height: 6vw;
@@ -5456,7 +5447,7 @@ html body .eventApplyType {
   width: 100%;
   height: auto;
   padding: 8px 8px 0;
-  background: #000000;
+  background: #f0f0f0;
 }
 html body .eventApplyType ul {
   width: 100%;
@@ -5503,7 +5494,6 @@ html body .applyList {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
   display: none;
 }
 html body .applyList.display {
@@ -5690,7 +5680,6 @@ html body .applyRecord {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
   display: none;
 }
 html body .applyRecord.display {
@@ -5720,10 +5709,10 @@ html body .applyRecord .searchContent .top .selectBox {
 html body .applyRecord .searchContent .top .selectBox select {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -5744,12 +5733,12 @@ html body .applyRecord .searchContent .top .selectBox .arrow_ic {
 html body .applyRecord .searchContent .top .inputBox {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -5989,7 +5978,6 @@ html body .vipWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
 }
 html body .vipWrap .topBox {
   width: 100%;
@@ -6068,7 +6056,7 @@ html body .vipWrap .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .vipWrap .lineTitle p {
-  color: #66E123;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -6078,13 +6066,13 @@ html body .vipWrap .lineTitle p {
 html body .vipWrap .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #66E123;
+  background: #b8151a;
 }
 html body .vipWrap .enjoyBox {
   width: 100%;
   height: auto;
   padding: 0 12px 24px;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
 }
 html body .vipWrap .enjoyBox ul {
   width: 100%;
@@ -6141,7 +6129,6 @@ html body .vipDetail {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
   padding-top: 16px;
 }
 html body .vipDetail .lineTitle {
@@ -6163,7 +6150,7 @@ html body .vipDetail .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .vipDetail .lineTitle p {
-  color: #66E123;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -6173,7 +6160,7 @@ html body .vipDetail .lineTitle p {
 html body .vipDetail .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #66E123;
+  background: #b8151a;
 }
 html body .vipDetail .lvWrap {
   width: 100%;
@@ -6201,7 +6188,6 @@ html body .vipDetail .lvWrap .list .left {
 }
 html body .vipDetail .lvWrap .list .left li {
   height: 40px;
-  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6219,7 +6205,7 @@ html body .vipDetail .lvWrap .list .left li.smallTitle p {
 html body .vipDetail .lvWrap .list .left li p {
   width: 100%;
   border-right: solid 1px #a8a8a8;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   text-align: center;
@@ -6246,7 +6232,6 @@ html body .vipDetail .lvWrap .list .right ul li {
   width: auto;
   min-width: 30vw;
   height: 40px;
-  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6265,7 +6250,7 @@ html body .vipDetail .lvWrap .list .right ul li.smallTitle p {
 html body .vipDetail .lvWrap .list .right ul li p {
   width: 100%;
   border-right: solid 1px #a8a8a8;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   text-align: center;
@@ -6363,11 +6348,10 @@ html body .vipDetail .lvWrap .list .fingerBox .finger {
 html body .vipDetail .remindBox {
   width: 100%;
   height: auto;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
-  border: 1px solid #ba9141;
   padding: 0 16px 16px;
 }
 html body .vipDetail .remindBox .lineTitle {
@@ -6381,7 +6365,7 @@ html body .vipDetail .remindBox .lineTitle .star_ic {
   margin: 0 5px;
 }
 html body .vipDetail .remindBox .text {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   line-height: 4.5vw;
@@ -6407,7 +6391,7 @@ html body .topList {
   width: 100%;
   height: auto;
   padding: 8px 8px 0;
-  background: #000000;
+  background: #f0f0f0;
 }
 html body .topList ul {
   width: 100%;
@@ -6450,7 +6434,6 @@ html body .mailWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
   overflow: hidden;
 }
 html body .mailWrap .lineTitle {
@@ -6975,12 +6958,11 @@ html body .cardWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
 }
 html body .cardWrap .cardBox {
   width: 100%;
   height: auto;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
 }
 html body .cardWrap .cardBox .title {
   color: #ba9141;
@@ -7021,12 +7003,12 @@ html body .cardWrap .cardContent ul li .inputBox {
 html body .cardWrap .cardContent ul li .inputBox input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -7054,10 +7036,10 @@ html body .cardWrap .cardContent ul li .selectBox {
 html body .cardWrap .cardContent ul li .selectBox select {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -7104,13 +7086,12 @@ html body .bettingWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
 }
 html body .bettingWrap .searchContent {
   width: 100%;
   height: auto;
   padding: 0 16px;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
 }
 html body .bettingWrap .searchContent .top {
   width: 100%;
@@ -7130,10 +7111,10 @@ html body .bettingWrap .searchContent .top .selectBox {
 html body .bettingWrap .searchContent .top .selectBox select {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -7154,12 +7135,12 @@ html body .bettingWrap .searchContent .top .selectBox .arrow_ic {
 html body .bettingWrap .searchContent .top .inputBox {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -7187,7 +7168,7 @@ html body .bettingWrap .searchContent .top .inputBox input {
   height: 100%;
   background: none;
   border: none;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
 }
@@ -7552,7 +7533,7 @@ html body .recordTop {
   width: 100%;
   height: auto;
   padding: 8px 8px 0;
-  background: #000000;
+  background: #f0f0f0;
 }
 html body .recordTop ul {
   width: 100%;
@@ -7721,7 +7702,6 @@ html body .depositWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
 }
 html body .depositWrap .lineTitle {
   width: 100%;
@@ -7742,7 +7722,7 @@ html body .depositWrap .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .depositWrap .lineTitle p {
-  color: #66E123;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -7752,12 +7732,12 @@ html body .depositWrap .lineTitle p {
 html body .depositWrap .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #66E123;
+  background: #b8151a;
 }
 html body .depositWrap .depList {
   width: 100%;
   height: auto;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
   padding: 0 16px 16px;
 }
 html body .depositWrap .depList ul {
@@ -7816,14 +7796,14 @@ html body .depositWrap .depContent {
   display: none;
   width: 100%;
   height: auto;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
   padding: 16px;
 }
 html body .depositWrap .depContent.display {
   display: block;
 }
 html body .depositWrap .depContent .smallTitle {
-  color: #66E123;
+  color: #ba9141;
   font-size: 4vw;
   font-weight: bold;
   margin: 10px 0 5px;
@@ -7839,10 +7819,10 @@ html body .depositWrap .depContent .selectBox {
 html body .depositWrap .depContent .selectBox select {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -7866,12 +7846,12 @@ html body .depositWrap .depContent .inputBox {
 html body .depositWrap .depContent .inputBox input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -7917,8 +7897,7 @@ html body .depositWrap .depContent button:active, html body .depositWrap .depCon
 html body .depositWrap .remindBox {
   width: 100%;
   height: auto;
-  background: #000000;
-  border: 1px solid #daaf6d;
+  background: #ffffff;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
   border-radius: 5px;
@@ -7936,7 +7915,7 @@ html body .depositWrap .remindBox .lineTitle .star_ic {
   margin: 0 5px;
 }
 html body .depositWrap .remindBox .text {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   line-height: 4.5vw;
@@ -7960,7 +7939,6 @@ html body .transWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
 }
 html body .transWrap .walletBox {
   width: 100%;
@@ -8053,7 +8031,7 @@ html body .transWrap .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .transWrap .lineTitle p {
-  color: #66E123;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -8063,7 +8041,7 @@ html body .transWrap .lineTitle p {
 html body .transWrap .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #66E123;
+  background: #b8151a;
 }
 html body .transWrap .transBox {
   width: 100%;
@@ -8109,10 +8087,10 @@ html body .transWrap .transBox .row .selectBox {
 html body .transWrap .transBox .row .selectBox select {
   width: 70vw;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -8144,12 +8122,12 @@ html body .transWrap .transBox .inputBox {
 html body .transWrap .transBox .inputBox input {
   width: 67vw;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -8313,7 +8291,6 @@ html body .withWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
 }
 html body .withWrap .walletBox {
   width: 100%;
@@ -8414,7 +8391,7 @@ html body .withWrap .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .withWrap .lineTitle p {
-  color: #66E123;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -8424,12 +8401,12 @@ html body .withWrap .lineTitle p {
 html body .withWrap .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #66E123;
+  background: #b8151a;
 }
 html body .withWrap .walletList {
   width: 100%;
   height: auto;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
   margin-bottom: 16px;
 }
 html body .withWrap .walletList button {
@@ -8542,7 +8519,7 @@ html body .withWrap .withContent {
   width: 100%;
   height: auto;
   padding: 0 16px;
-  border-bottom: solid 2px #66E123;
+  border-bottom: solid 2px #b8151a;
 }
 html body .withWrap .withContent .limitBox {
   width: 100%;
@@ -8570,10 +8547,10 @@ html body .withWrap .withContent .selectBox {
 html body .withWrap .withContent .selectBox select {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -8597,12 +8574,12 @@ html body .withWrap .withContent .inputBox {
 html body .withWrap .withContent .inputBox input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -8647,8 +8624,7 @@ html body .withWrap .withContent button:active, html body .withWrap .withContent
 html body .withWrap .remindBox {
   width: 100%;
   height: auto;
-  background: #000000;
-  border: 1px solid #daaf6d;
+  background: #ffffff;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5019607843);
   border-radius: 5px;
@@ -8666,7 +8642,7 @@ html body .withWrap .remindBox .lineTitle .star_ic {
   margin: 0 5px;
 }
 html body .withWrap .remindBox .text {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   line-height: 4.5vw;
@@ -8687,7 +8663,6 @@ html body .inviteWrap {
   background: #f0f0f0;
   overflow-y: auto;
   padding: 0 8px 20vw;
-  background: #000000;
 }
 html body .inviteWrap .top {
   width: 100%;
@@ -8709,12 +8684,12 @@ html body .inviteWrap .top .inputBox {
 html body .inviteWrap .top .inputBox input {
   width: 100%;
   height: 9.87vw;
-  background: #000000;
+  background: #ffffff;
   border-radius: 5px;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   padding-left: 16px;
@@ -8791,7 +8766,7 @@ html body .inviteWrap .lineTitle .star_ic {
   margin-right: 5px;
 }
 html body .inviteWrap .lineTitle p {
-  color: #66E123;
+  color: #b8151a;
   font-size: 4vw;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -8801,7 +8776,7 @@ html body .inviteWrap .lineTitle p {
 html body .inviteWrap .lineTitle .line {
   width: 100%;
   height: 2px;
-  background: #66E123;
+  background: #b8151a;
 }
 html body .inviteWrap .down {
   width: 100%;
@@ -8822,7 +8797,7 @@ html body .inviteWrap .down .title {
   margin: 10px 0;
 }
 html body .inviteWrap .down .text {
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 3.4vw;
   font-weight: bold;
   margin-bottom: 5px;
