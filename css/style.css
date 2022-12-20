@@ -4226,14 +4226,15 @@ html body .walletWrap .walletList .forPlatform ul li {
   width: auto;
   height: auto;
   border-radius: 10px;
-  background: #ffffff;
+  background: #000000;
+  border: 1px solid #ffcb70;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
   padding: 10px 16px;
 }
 html body .walletWrap .walletList .forPlatform ul li div {
   width: 100%;
-  color: #ba9141;
+  color: #ffcb70;
   font-size: 3.4vw;
   font-weight: bold;
   letter-spacing: 1px;
@@ -4242,7 +4243,7 @@ html body .walletWrap .walletList .forPlatform ul li div {
   white-space: nowrap;
 }
 html body .walletWrap .walletList .forPlatform ul li p {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 5vw;
   font-weight: bold;
   margin-top: 10px;
@@ -8291,14 +8292,15 @@ html body .transWrap .walletList .forPlatform ul li {
   width: auto;
   height: auto;
   border-radius: 10px;
-  background: #ffffff;
+  background: #000000;
+  border: 1px solid #ffcb70;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
   padding: 10px 16px;
 }
 html body .transWrap .walletList .forPlatform ul li div {
   width: 100%;
-  color: #ba9141;
+  color: #ffcb70;
   font-size: 3.4vw;
   font-weight: bold;
   letter-spacing: 1px;
@@ -8307,7 +8309,7 @@ html body .transWrap .walletList .forPlatform ul li div {
   white-space: nowrap;
 }
 html body .transWrap .walletList .forPlatform ul li p {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 5vw;
   font-weight: bold;
   margin-top: 10px;
@@ -8519,14 +8521,15 @@ html body .withWrap .walletList .forPlatform ul li {
   width: auto;
   height: auto;
   border-radius: 10px;
-  background: #ffffff;
+  background: #000000;
+  border: 1px solid #ffcb70;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
   padding: 10px 16px;
 }
 html body .withWrap .walletList .forPlatform ul li div {
   width: 100%;
-  color: #ba9141;
+  color: #ffcb70;
   font-size: 3.4vw;
   font-weight: bold;
   letter-spacing: 1px;
@@ -8535,7 +8538,7 @@ html body .withWrap .walletList .forPlatform ul li div {
   white-space: nowrap;
 }
 html body .withWrap .walletList .forPlatform ul li p {
-  color: #b8151a;
+  color: #ff0000;
   font-size: 5vw;
   font-weight: bold;
   margin-top: 10px;

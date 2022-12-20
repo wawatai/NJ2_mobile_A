@@ -165,13 +165,14 @@
                     width: auto;
                     height: auto;
                     border-radius: 10px;
-                    background: $bg_2;
+                    background: $bg_1;
+                    border: 1px solid $mainColor_7;
                     box-shadow: 1px 1px 2px 0 $mainShadow_1;
                     padding: 10px 16px;
 
                     div {
                         width: 100%;
-                        color: $mainColor_2;
+                        color: $mainColor_7;
                         font-size: 3.4vw;
                         font-weight: bold;
                         letter-spacing: 1px;
@@ -179,7 +180,7 @@
                     }
 
                     p {
-                        color: $mainColor_1;
+                        color: $mainColor_8;
                         font-size: 5vw;
                         font-weight: bold;
                         margin-top: 10px;
