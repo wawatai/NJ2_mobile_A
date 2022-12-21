@@ -4102,9 +4102,6 @@ html body .walletWrap .walletBox ul li p {
 html body .walletWrap .walletBox ul li:nth-of-type(1) {
   background: #b8151a;
 }
-html body .walletWrap .walletBox ul li:nth-of-type(1) {
-  background: #b8151a;
-}
 html body .walletWrap .walletBox ul li:nth-of-type(3) {
   background: #000000;
   border: 1px solid #7f7f7f;
@@ -7327,7 +7324,7 @@ html body .bettingWrap .list .recordBox ul {
   width: 100%;
   height: auto;
   background: #000000;
-  border: solid 1px #ffcb72;
+  border: solid 1px #b8151a;
   border-top: none;
   padding: 0 8px;
 }
