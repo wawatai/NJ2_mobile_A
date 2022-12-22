@@ -2220,7 +2220,7 @@ html body .filter .jumpWindow.registerWindow form label.isCheck input[type=check
           transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
-  background: #f9f9f9;
+  background: #000000;
   border-radius: 50%;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
@@ -2236,8 +2236,7 @@ html body .filter .jumpWindow.registerWindow form label.isCheck input[type=check
           transform: translate(-50%, -50%);
   width: 13px;
   height: 13px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #daaf6d;
   border-radius: 50%;
 }
 html body .filter .jumpWindow.registerWindow form label.isCheck input[type=checkbox]:checked::after {
@@ -2679,7 +2678,7 @@ html body .filter .jumpWindow.betWindow .enterGame div input::before {
           transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
-  background: #f9f9f9;
+  background: #000000;
   border-radius: 50%;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
@@ -2695,8 +2694,7 @@ html body .filter .jumpWindow.betWindow .enterGame div input::after {
           transform: translate(-50%, -50%);
   width: 13px;
   height: 13px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #daaf6d;
   border-radius: 50%;
 }
 html body .filter .jumpWindow.betWindow .enterGame div input:checked::after {
@@ -3364,7 +3362,7 @@ html body .filter .jumpWindow.agentWindow form .box ul li input::before {
           transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
-  background: #f9f9f9;
+  background: #000000;
   border-radius: 50%;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
@@ -3380,8 +3378,7 @@ html body .filter .jumpWindow.agentWindow form .box ul li input::after {
           transform: translate(-50%, -50%);
   width: 13px;
   height: 13px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #daaf6d;
   border-radius: 50%;
 }
 html body .filter .jumpWindow.agentWindow form .box ul li input:checked::after {
@@ -3437,7 +3434,7 @@ html body .filter .jumpWindow.agentWindow form .isCheck input::before {
           transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
-  background: #f9f9f9;
+  background: #000000;
   border-radius: 50%;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
@@ -3453,8 +3450,7 @@ html body .filter .jumpWindow.agentWindow form .isCheck input::after {
           transform: translate(-50%, -50%);
   width: 13px;
   height: 13px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #daaf6d;
   border-radius: 50%;
 }
 html body .filter .jumpWindow.agentWindow form .isCheck input:checked::after {
@@ -6603,7 +6599,7 @@ html body .mailWrap.normal .editBox .all input::before {
           transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
-  background: #f9f9f9;
+  background: #000000;
   border-radius: 50%;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
@@ -6619,8 +6615,7 @@ html body .mailWrap.normal .editBox .all input::after {
           transform: translate(-50%, -50%);
   width: 13px;
   height: 13px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #daaf6d;
   border-radius: 50%;
 }
 html body .mailWrap.normal .editBox .all input:checked::after {
@@ -6664,6 +6659,12 @@ html body .mailWrap.normal .mailBox {
 }
 html body .mailWrap.normal .mailBox.editing {
   height: calc(100vh - 255px);
+}
+html body .mailWrap.normal .mailBox.editing ul li.read input::before {
+  border: solid 1px #7f7f7f;
+}
+html body .mailWrap.normal .mailBox.editing ul li.read input::after {
+  background: #7f7f7f;
 }
 html body .mailWrap.normal .mailBox.editing ul li input {
   display: block;
@@ -6745,7 +6746,7 @@ html body .mailWrap.normal .mailBox ul li input::before {
           transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
-  background: #f9f9f9;
+  background: #000000;
   border-radius: 50%;
   border: solid 1px #daaf6d;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
@@ -6761,8 +6762,7 @@ html body .mailWrap.normal .mailBox ul li input::after {
           transform: translate(-50%, -50%);
   width: 13px;
   height: 13px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: #daaf6d;
   border-radius: 50%;
 }
 html body .mailWrap.normal .mailBox ul li input:checked::after {

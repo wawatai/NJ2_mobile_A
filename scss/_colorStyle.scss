@@ -517,7 +517,7 @@ input:disabled {
         transform: translate(-50%,-50%);
         width: 18px;
         height: 18px;
-        background: #f9f9f9;
+        background: #000000;
         border-radius: 50%;
         border: solid 1px #daaf6d;
         box-shadow: 0 2px 3px 0 #0000001d inset;
@@ -532,7 +532,7 @@ input:disabled {
         transform: translate(-50%,-50%);
         width: 13px;
         height: 13px;
-        background: linear-gradient(to top,#970707 0%,#cf0505 98%);
+        background: #daaf6d;
         border-radius: 50%;
     }
 

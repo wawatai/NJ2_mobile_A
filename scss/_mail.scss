@@ -162,6 +162,17 @@
 
                     li {
 
+                        &.read {
+                            input {
+                                &::before {
+                                    border: solid 1px $disable;
+                                }
+                                &::after {
+                                    background: $disable;
+                                }
+                            }
+                        }
+
                         input {
                             display: block;
                         }
