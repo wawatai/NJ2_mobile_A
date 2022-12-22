@@ -4548,6 +4548,7 @@ html body .memberList ul li {
   height: 45px;
   background: #000000;
   border: 1px solid #a8a8a8;
+  border-bottom: transparent;
   border-radius: 16px 16px 0 0;
   color: #a8a8a8;
   font-size: 4vw;
@@ -5495,6 +5496,7 @@ html body .eventApplyType ul li {
   height: 45px;
   background: #000000;
   border: 1px solid #a8a8a8;
+  border-bottom: transparent;
   border-radius: 16px 16px 0 0;
   color: #a8a8a8;
   font-size: 4vw;
@@ -6442,6 +6444,7 @@ html body .topList ul li {
   height: 45px;
   background: #000000;
   border: 1px solid #a8a8a8;
+  border-bottom: transparent;
   border-radius: 16px 16px 0 0;
   color: #a8a8a8;
   font-size: 4vw;
@@ -7580,6 +7583,7 @@ html body .recordTop ul li {
   height: 45px;
   background: #000000;
   border: 1px solid #a8a8a8;
+  border-bottom: transparent;
   border-radius: 16px 16px 0 0;
   color: #a8a8a8;
   font-size: 4vw;

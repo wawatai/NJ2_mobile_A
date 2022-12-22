@@ -238,6 +238,7 @@ $table_jumpWindow_BG: #000000;
 @mixin pageStyle_1 {
     background: #000000;
     border: 1px solid #a8a8a8;
+    border-bottom:  transparent;
     border-radius: 16px 16px 0 0;
     color: #a8a8a8;
     font-size: 4vw;
