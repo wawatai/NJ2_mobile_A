@@ -2940,7 +2940,7 @@ html body .filter .jumpWindow.waterWindow_1 .content .box .smallTitle, html body
   width: 100%;
   height: 9vw;
   background: #b78d4b;
-  border-bottom: solid 1px #ffcb72;
+  border-bottom: solid 1px #d5ab6a;
   color: #ffffff;
   font-size: 4vw;
   font-weight: bold;
@@ -2962,7 +2962,7 @@ html body .filter .jumpWindow.waterWindow_1 .content .box ul, html body .filter 
 html body .filter .jumpWindow.waterWindow_1 .content .box ul li, html body .filter .jumpWindow.waterWindow_2 .content .box ul li, html body .filter .jumpWindow.betRecord .content .box ul li, html body .filter .jumpWindow.pointWindow .content .box ul li, html body .filter .jumpWindow.partnerBox .content .box ul li {
   width: 100%;
   height: 9vw;
-  border-bottom: solid 1px #ffcb72;
+  border-bottom: solid 1px #d5ab6a;
   color: #ba9141;
   font-size: 3.7vw;
   font-weight: bold;
@@ -3000,7 +3000,7 @@ html body .filter .jumpWindow.waterWindow_1 .content table tr th, html body .fil
   height: 9vw;
   vertical-align: middle;
   background: #b78d4b;
-  border-bottom: solid 1px #ffcb72;
+  border-bottom: solid 1px #d5ab6a;
 }
 html body .filter .jumpWindow.waterWindow_1 .content table tr th p, html body .filter .jumpWindow.waterWindow_2 .content table tr th p, html body .filter .jumpWindow.betRecord .content table tr th p, html body .filter .jumpWindow.pointWindow .content table tr th p, html body .filter .jumpWindow.partnerBox .content table tr th p {
   width: 100%;
@@ -3029,7 +3029,7 @@ html body .filter .jumpWindow.waterWindow_1 .content table tr td:last-child, htm
 html body .filter .jumpWindow.waterWindow_1 .content table tr td p, html body .filter .jumpWindow.waterWindow_2 .content table tr td p, html body .filter .jumpWindow.betRecord .content table tr td p, html body .filter .jumpWindow.pointWindow .content table tr td p, html body .filter .jumpWindow.partnerBox .content table tr td p {
   width: 100%;
   height: 100%;
-  border-bottom: solid 1px #ffcb72;
+  border-bottom: solid 1px #d5ab6a;
   color: #929292;
   font-size: 3.7vw;
   font-weight: bold;
@@ -4870,7 +4870,7 @@ html body .memberPlatform .box ul {
   width: 100%;
   height: auto;
   background: #000000;
-  border: solid 1px #ffcb72;
+  border: solid 1px #d5ab6a;
   border-top: none;
   padding: 0 8px;
 }
@@ -5982,7 +5982,7 @@ html body .applyRecord .reviewBody .recordBox ul {
   width: 100%;
   height: auto;
   background: #000000;
-  border: solid 1px #ffcb72;
+  border: solid 1px #d5ab6a;
   border-top: none;
   padding: 0 12px;
 }
@@ -6118,7 +6118,8 @@ html body .vipWrap .enjoyBox ul {
 html body .vipWrap .enjoyBox ul li {
   width: 100%;
   height: 11vw;
-  background: #ffffff;
+  background: #000000;
+  border: solid 1px #d5ab6a;
   border-radius: 5px 10px 10px 5px;
   -webkit-box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1137254902);
           box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1137254902);
@@ -6146,7 +6147,7 @@ html body .vipWrap .enjoyBox ul li::before {
   left: 0;
   width: 5px;
   height: 100%;
-  background: #daaf6d;
+  background: #d5ab6a;
 }
 html body .vipWrap .enjoyBox ul li:last-child {
   margin: 0;
@@ -6209,7 +6210,7 @@ html body .vipDetail .lvWrap .list {
   height: auto;
   background: #000000;
   border-radius: 10px;
-  border: solid 1px #ffcb72;
+  border: solid 1px #d5ab6a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6534,6 +6535,7 @@ html body .mailWrap.normal .subClass li {
   font-size: 4vw;
   font-weight: bold;
   letter-spacing: 1px;
+  background: #b8151a;
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -6683,7 +6685,8 @@ html body .mailWrap.normal .mailBox ul {
 html body .mailWrap.normal .mailBox ul li {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #000000;
+  border: solid 1px #d5ab6a;
   border-radius: 5px 10px 10px 5px;
   -webkit-box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1137254902);
           box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1137254902);
@@ -6705,14 +6708,23 @@ html body .mailWrap.normal .mailBox ul li::before {
   left: 0;
   width: 5px;
   height: 100%;
-  background: #daaf6d;
+  background: #d5ab6a;
 }
 html body .mailWrap.normal .mailBox ul li.read {
-  background: #e3e3e3;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: 1px solid #7f7f7f;
+}
+html body .mailWrap.normal .mailBox ul li.read::before {
+  background: #7f7f7f;
 }
 html body .mailWrap.normal .mailBox ul li.read .right .title {
+  color: #7f7f7f;
+}
+html body .mailWrap.normal .mailBox ul li.read .right .textBox p {
+  color: #7f7f7f;
+}
+html body .mailWrap.normal .mailBox ul li.read .right .textBox p.date {
   color: #7f7f7f;
 }
 html body .mailWrap.normal .mailBox ul li input {
@@ -6767,7 +6779,7 @@ html body .mailWrap.normal .mailBox ul li .right {
           align-items: center;
 }
 html body .mailWrap.normal .mailBox ul li .right .title {
-  color: #ba9141;
+  color: #ffcb70;
   font-size: 4vw;
   font-weight: bold;
   margin-right: 16px;
@@ -6780,7 +6792,7 @@ html body .mailWrap.normal .mailBox ul li .right .textBox {
 }
 html body .mailWrap.normal .mailBox ul li .right .textBox p {
   width: 52vw;
-  color: #929292;
+  color: #ffcb70;
   font-size: 3.4vw;
   font-weight: bold;
   overflow: hidden;
@@ -6788,7 +6800,7 @@ html body .mailWrap.normal .mailBox ul li .right .textBox p {
   white-space: nowrap;
 }
 html body .mailWrap.normal .mailBox ul li .right .textBox p.date {
-  color: #7f7f7f;
+  color: #ffcb70;
   margin-bottom: 5px;
 }
 html body .mailWrap.normal .mailBox ul li .arrow_ic {
@@ -6881,7 +6893,8 @@ html body .mailWrap.post .mailBox ul {
 html body .mailWrap.post .mailBox ul li {
   width: 100%;
   height: 15vw;
-  background: #ffffff;
+  background: #000000;
+  border: solid 1px #d5ab6a;
   border-radius: 5px 10px 10px 5px;
   -webkit-box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1137254902);
           box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1137254902);
@@ -6908,7 +6921,7 @@ html body .mailWrap.post .mailBox ul li::before {
   left: 0;
   width: 5px;
   height: 100%;
-  background: #daaf6d;
+  background: #d5ab6a;
 }
 html body .mailWrap.post .mailBox ul li::before {
   border-radius: 30px 0 0 30px;
@@ -6973,9 +6986,9 @@ html body .mailContent .box .title p {
 html body .mailContent .box .content {
   width: 100%;
   height: calc(100vh - 185px);
-  background: #ffffff;
+  background: #000000;
   border-radius: 0 0 5px 5px;
-  border: solid 1px #ffcb72;
+  border: solid 1px #d5ab6a;
   border-top: none;
   overflow-y: auto;
   padding: 16px;
@@ -7431,7 +7444,7 @@ html body .bettingWrap .list .dealBox ul {
   width: 100%;
   height: auto;
   background: #000000;
-  border: solid 1px #ffcb72;
+  border: solid 1px #d5ab6a;
   border-top: none;
   padding: 0 8px;
 }
@@ -7464,7 +7477,7 @@ html body .bettingWrap .list .partnerBox {
   width: 100%;
   height: auto;
   background: #000000;
-  border: 1px solid #ffcb72;
+  border: 1px solid #d5ab6a;
   border-radius: 16px;
   -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
@@ -7673,7 +7686,7 @@ html body .waterBox .box ul {
   width: 100%;
   height: auto;
   background: #000000;
-  border: solid 1px #ffcb72;
+  border: solid 1px #d5ab6a;
   border-top: none;
   padding: 0 8px;
 }

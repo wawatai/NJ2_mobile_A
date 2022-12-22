@@ -204,7 +204,8 @@ $help_uploadBox_Border: #cccccc;
     border: solid 1px #ffcb72;
 }
 @mixin innerBG_2 {
-    background: #ffffff;
+    background: #000000;
+    border: solid 1px #d5ab6a;
     border-radius: 5px 10px 10px 5px;
     box-shadow: 1px 2px 1px 0 #0000001d;
     position: relative;
@@ -217,7 +218,7 @@ $help_uploadBox_Border: #cccccc;
         left: 0;
         width: 5px;
         height: 100%;
-        background: #daaf6d;
+        background: #d5ab6a;
     }
 }
 
@@ -229,7 +230,7 @@ $table_BG: #000000;
 $table_TitleBG: linear-gradient(to top,#b78c4b 0%,#d5ab6a 100%);
 $table_TitleSecondBG: linear-gradient(to top,#a2a2a2 0%,#cccccc 77%);
 $table_Title: #ffffff;
-$table_Border: #ffcb72;
+$table_Border: #d5ab6a;
 $table_innerBorder: #a8a8a8;
 $table_jumpWindow_TitleBG: #b78d4b;
 $table_jumpWindow_BG: #000000;

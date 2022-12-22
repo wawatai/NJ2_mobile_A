@@ -77,6 +77,7 @@
                 width: auto;
                 height: 9.87vw;
                 @include mainBtn;
+                background: $mainColor_1;
                 display: none;
                 align-items: center;
                 justify-content: center;
@@ -201,13 +202,27 @@
                     margin-bottom: 10px;
 
                     &.read {
-                        background: $mail_readBG;
                         box-shadow: none;
+                        border: 1px solid $disable;
+
+                        &::before {
+                            background: $disable;
+                        }
 
                         .right {
 
                             .title {
                                 color: $disable;
+                            }
+
+                            .textBox {
+                                p {
+                                    color: $disable;
+
+                                    &.date {
+                                        color: $disable;
+                                    }
+                                }
                             }
                         }
                     }
@@ -228,7 +243,7 @@
                         align-items: center;
 
                         .title {
-                            color: $mainColor_2;
+                            color: $mainColor_7;
                             font-size: 4vw;
                             font-weight: bold;
                             margin-right: 16px;
@@ -241,13 +256,13 @@
     
                             p {
                                 width: 52vw;
-                                color: $mainColor_3;
+                                color: $mainColor_7;
                                 font-size: 3.4vw;
                                 font-weight: bold;
                                 @include hiddenText;
 
                                 &.date {
-                                    color: $disable;
+                                    color: $mainColor_7;
                                     margin-bottom: 5px;
                                 }
                             }
@@ -406,7 +421,7 @@
         .content {
             width: 100%;
             height: calc(100vh - 185px);
-            background: $bg_2;
+            background: $bg_1;
             border-radius: 0 0 5px 5px;
             border: solid 1px $table_Border;
             border-top: none;
