@@ -143,6 +143,12 @@
                             background: $lightBtn_secondColor;
                             color: $mainColor_4;
                         }
+
+                        .arrow_ic {
+                            &::before {
+                                filter: grayscale(80%);
+                            }
+                        }
                     }
                 }
             }
@@ -163,12 +169,19 @@
                     li {
 
                         &.read {
+
                             input {
                                 &::before {
                                     border: solid 1px $disable;
                                 }
                                 &::after {
                                     background: $disable;
+                                }
+                            }
+
+                            .arrow_ic {
+                                &::before {
+                                    filter: grayscale(80%);
                                 }
                             }
                         }
@@ -234,6 +247,12 @@
                                         color: $disable;
                                     }
                                 }
+                            }
+                        }
+
+                        .arrow_ic {
+                            &::before {
+                                filter: grayscale(80%);
                             }
                         }
                     }
