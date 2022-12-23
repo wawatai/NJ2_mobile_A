@@ -2986,8 +2986,9 @@ html body .filter .jumpWindow.waterWindow_1 .content .box ul li p.money, html bo
 html body .filter .jumpWindow.waterWindow_1 .content table, html body .filter .jumpWindow.waterWindow_2 .content table, html body .filter .jumpWindow.betRecord .content table, html body .filter .jumpWindow.pointWindow .content table, html body .filter .jumpWindow.partnerBox .content table {
   width: 100%;
   height: auto;
-  -webkit-box-shadow: 0 0 0 1px #b8151a;
-          box-shadow: 0 0 0 1px #b8151a;
+  border-bottom: solid 1px #d5ab6a;
+  -webkit-box-shadow: 0 0 0 1px #b78d4b;
+          box-shadow: 0 0 0 1px #b78d4b;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -3002,7 +3003,7 @@ html body .filter .jumpWindow.waterWindow_1 .content table tr th, html body .fil
 }
 html body .filter .jumpWindow.waterWindow_1 .content table tr th p, html body .filter .jumpWindow.waterWindow_2 .content table tr th p, html body .filter .jumpWindow.betRecord .content table tr th p, html body .filter .jumpWindow.pointWindow .content table tr th p, html body .filter .jumpWindow.partnerBox .content table tr th p {
   width: 100%;
-  color: #b8151a;
+  color: #ffffff;
   font-size: 3.4vw;
   font-weight: bold;
   text-align: center;
